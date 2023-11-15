@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Badge検索</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="このサイトはGithubのurlを入力すると適したBadgeを出力できるサイトです">
+    <meta name="keywords" content="Badge,Github,Java,Python">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <script src="js/openclose.js"></script>
+    <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+    <!--小さな端末用（800px以下端末）のロゴとメニュー-->
+    <div id="sh">
+        <h1 class="logo"><a href="index.html"><img src="images/logo.png" Badge検索></a></h1>
+        <nav id="menubar-s">
+            <ul>
+                <li><a href="Home.html">HOME</a></li>
+                <li><a href="index.html">Badgeとは</a></li>
+                <li><a href="Search.html">詳細検索</a></li>
+                <br><b> 人気のBadge</b></br>
+                <li><a href="Badge_C.html">C</a></li>
+                <li><a href="Badge_C++.html">C++</a></li>
+                <li><a href="Badge_Csharp.html">C#</a></li>
+                <li><a href="Badge_Java.html">Java</a></li>
+                <li><a href="Badge_Python.html">Python</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="container">
+
+        <div id="main">
+
+
+
+            <h2><span>詳細検索</span></h2>
+            詳細検索はどのようなBadgeを指しているのかをここに記述する
+
+            <h3>GithubCI/CD</h3>
+            GithubのライセンスやアクションなどのBadgeを作成することができる。
+            <h3>CI/CD</h3>
+            Github以外のCI/CDに関するBadgeを作成することができる。
+            CI/CDとは継続的インテグレーション/継続的デリバリーと呼ばれており、アプリケーションの開発に自動でテスト、リリースを行うことができる。
+            <h3>テストカバレッジ</h3>
+            テストカバレッジとはリポジトリのソースコードのうち、テストがどのくらい網羅できているかを指すものである。
+            カバレッジは%やAなどの英単語で書かれることが多い。
+            <h3>コード品質</h3>
+            コード品質とはコードの効率性や読みやすさを表す指標である。コード品質が高ければチームメンバーや自身が見る際に時間やリソースを節約することができる。
+            <h3>ライセンス</h3>
+            オープンソースソフトウェアとはソースコードが自由に複製や改良できてしまう。これを制限するものがオープンソースライセンスである。
+            作成したリポジトリを提供する際にどのようなライセンスにするのかをBadgeとして表すことができます。
+            <h3>外部サイト</h3>
+            作者の連絡アカウントや投稿サイトなどをBadgeとして表すことができます。
+            <h3>リリースバージョン</h3>
+            ソフトウェアやライブラリの公開状況を表すBadgeである。特定のバージョンの機能やバグの状態を理解することができる。
+            <h3>セキュリティー</h3>
+
+            <h3>プラットフォーム</h3>
+
+            <h3>開発ツール</h3>
+
+            <h3>デプロイ環境</h3>
+
+        </div>
+        <!--/main-->
+
+        <div id="sub">
+
+            <!--PC用（801px以上端末）ロゴ-->
+            <h1 class="logo"><a href="index.html"><img src="images/logo.png" Badge検索></a></h1>
+
+            <!--PC用（801px以上端末）メニュー-->
+            <nav id="menubar">
+                <ul>
+                    <li><a href="Home.html">HOME</a></li>
+                    <li><a href="index.html">Badgeとは</a></li>
+                    <li><a href="Search.html">詳細検索</a></li>
+                    <br><b> 人気のBadge</b></br>
+                    <li><a href="Badge_C.html">C</a></li>
+                    <li><a href="Badge_C++.html">C++</a></li>
+                    <li><a href="Badge_Csharp.html">C#</a></li>
+                    <li><a href="Badge_Csharp.html">Java</a></li>
+                    <li><a href="Badge_Csharp.html">Python</a></li>
+                </ul>
+            </nav>
+
+        </div>
+        <!--/sub-->
+
+        <p id="pagetop"><a href="#">↑</a></p>
+
+        <footer>
+            <small>Copyright&copy; <a href="index.html">Sample Web Site</a> All Rights Reserved.</small>
+            <span class="pr"><a href="http://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+        </footer>
+
+    </div>
+    <!--/container-->
+
+    <!--メニューの３本バー-->
+    <div id="menubar_hdr" class="close"><span></span><span></span><span></span></div>
+
+    <!--メニューの開閉処理条件設定　800px以下-->
+    <script>
+        if (OCwindowWidth() <= 800) {
+            open_close("menubar_hdr", "menubar-s");
+        }
+    </script>
+
+    <!--lightbox用jsファイルの読み込み-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox-plus-jquery.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<ul class="tab1"><li class="tab1__item on"><span class="tab1__link" data-tab-body="1">html</span></li><li class="tab1__item"><span class="tab1__link" data-tab-body="2">Markdown</span></li></ul><div class="tab1-body"><div class="tab1-body__item tab1-body__item--1 on">タブのコンテンツ１ </div><div class="tab1-body__item tab1-body__item--2">タブのコンテンツ２ </div></div><style>.tab1 {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-color: #fff !important;
+    margin: 0 !important;
+}
+
+.tab1__item {
+    flex: 1;
+    flex-basis: 120px;
+}
+
+.tab1__link {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #65c6ba;
+    cursor: pointer;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.tab1__link.on {
+    background-color: #b1e2dc;
+}
+
+.tab1-body__item {
+    margin: 30px 15px;
+    display: none;
+    text-align: center;
+}
+
+.tab1-body__item.on {
+    display: block;
+}
+
+</style>

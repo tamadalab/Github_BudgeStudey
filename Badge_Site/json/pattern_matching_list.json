@@ -1,0 +1,460 @@
+{
+    "1CI/CD (GitHub限定)": [
+        {
+            "name": "raw.githubusercontent.com",
+            "url": "https://raw.githubusercontent.com"
+        },
+        {
+            "name": "star-history.com",
+            "url": "https://star-history.com"
+        },
+        {
+            "name": "starchart.cc",
+            "url": "https://starchart.cc"
+        },
+        {
+            "name": "www.codetriage.com",
+            "url": "https://www.codetriage.com"
+        },
+        {
+            "name": "github.com",
+            "url": "https://github.com"
+        }
+    ],
+    "2CI/CD (それ以外)": [
+        {
+            "name": "build.ros.org",
+            "url": "https://build.ros.org"
+        },
+        {
+            "name": "build.ros2.org",
+            "url": "https://build.ros2.org"
+        },
+        {
+            "name": "ci.appveyor.com",
+            "url": "https://ci.appveyor.com"
+        },
+        {
+            "name": "ci.trafficserver.apache.org",
+            "url": "https://ci.trafficserver.apache.org"
+        },
+        {
+            "name": "cirrus-ci.com",
+            "url": "https://cirrus-ci.com"
+        },
+        {
+            "name": "app.circleci.com",
+            "url": "https://app.circleci.com"
+        },
+        {
+            "name": "dl.circleci.com",
+            "url": "https://dl.circleci.com"
+        },
+        {
+            "name": "storage.googleapis.com",
+            "url": "https://storage.googleapis.com"
+        },
+        {
+            "name": "oss-fuzz-build-logs.storage.googleapis.com",
+            "url": "https://oss-fuzz-build-logs.storage.googleapis.com"
+        },
+        {
+            "name": "circleci.com",
+            "url": "https://circleci.com"
+        },
+        {
+            "name": "msrasrg.visualstudio.com",
+            "url": "https://msrasrg.visualstudio.com"
+        }
+    ],
+    "3テストカバレッジの%": [
+        {
+            "name": "codecov.io",
+            "url": "https://codecov.io"
+        },
+        {
+            "name": "coveralls.io",
+            "url": "https://coveralls.io"
+        },
+        {
+            "name": "bugs.chromium.org",
+            "url": "https://bugs.chromium.org"
+        },
+        {
+            "name": "www.codacy.com",
+            "url": "https://www.codacy.com"
+        },
+        {
+            "name": "app.codecov.io",
+            "url": "https://app.codecov.io"
+        },
+        {
+            "name": "app.codacy.com",
+            "url": "https://app.codacy.com"
+        }
+    ],
+    "4コード品質": [
+        {
+            "name": "bestpractices.coreinfrastructure.org",
+            "url": "https://bestpractices.coreinfrastructure.org"
+        },
+        {
+            "name": "isitmaintained.com",
+            "url": "https://isitmaintained.com"
+        },
+        {
+            "name": "javadoc.io",
+            "url": "https://javadoc.io"
+        },
+        {
+            "name": "lgtm.com",
+            "url": "https://lgtm.com"
+        },
+        {
+            "name": "scan.coverity.com",
+            "url": "https://scan.coverity.com"
+        },
+        {
+            "name": "www.javadoc.io",
+            "url": "https://www.javadoc.io"
+        },
+        {
+            "name": "isitmaintained.com",
+            "url": "http://isitmaintained.com"
+        },
+        {
+            "name": "www.codefactor.io",
+            "url": "https://www.codefactor.io"
+        },
+        {
+            "name": "codeclimate.com",
+            "url": "https://codeclimate.com"
+        }
+    ],
+    "5ライセンス": [
+        {
+            "name": "app.fossa.com",
+            "url": "https://app.fossa.com"
+        },
+        {
+            "name": "app.fossa.io",
+            "url": "https://app.fossa.io"
+        },
+        {
+            "name": "www.apache.org",
+            "url": "http://www.apache.org"
+        },
+        {
+            "name": "creativecommons.org",
+            "url": "https://creativecommons.org"
+        },
+        {
+            "name": "opensource.org",
+            "url": "https://opensource.org"
+        },
+        {
+            "name": "www.gnu.org",
+            "url": "https://www.gnu.org"
+        }
+    ],
+    "6Githubの評価数やTwitterなどの外部url": [
+        {
+            "name": "discord.gg",
+            "url": "https://discord.gg"
+        },
+        {
+            "name": "gitter.im",
+            "url": "https://gitter.im"
+        },
+        {
+            "name": "discord.com",
+            "url": "https://discord.com"
+        },
+        {
+            "name": "twitter.com",
+            "url": "https://twitter.com"
+        },
+        {
+            "name": "join.slack.com",
+            "url": "https://join.slack.com"
+        },
+        {
+            "name": "paypal.me",
+            "url": "https://paypal.me"
+        },
+        {
+            "name": "app.slack.com",
+            "url": "https://app.slack.com"
+        },
+        {
+            "name": "starchart.cc",
+            "url": "https://starchart.cc"
+        },
+        {
+            "name": "liberapay.com",
+            "url": "https://liberapay.com"
+        },
+        {
+            "name": "pepy.tech",
+            "url": "https://pepy.tech"
+        },
+        {
+            "name": "matrix.to",
+            "url": "https://matrix.to"
+        },
+        {
+            "name": "star-history.com",
+            "url": "https://star-history.com"
+        },
+        {
+            "name": "pypistats.org",
+            "url": "https://pypistats.org"
+        },
+        {
+            "name": "the-asf.slack.com",
+            "url": "https://the-asf.slack.com"
+        },
+        {
+            "name": "www.paypal.me",
+            "url": "https://www.paypal.me"
+        },
+        {
+            "name": "www.paypal.me",
+            "url": "https://www.paypal.me"
+        },
+        {
+            "name": "youtu.be",
+            "url": "http://youtu.be"
+        },
+        {
+            "name": "jq.qq.com",
+            "url": "https://jq.qq.com"
+        },
+        {
+            "name": "store.steampowered.com",
+            "url": "https://store.steampowered.com"
+        },
+        {
+            "name": "t.me",
+            "url": "https://t.me"
+        },
+        {
+            "name": "paypal.me",
+            "url": "https://paypal.me"
+        },
+        {
+            "name": "pepy.tech",
+            "url": "https://pepy.tech"
+        },
+        {
+            "name": "www.patreon.com",
+            "url": "https://www.patreon.com"
+        },
+        {
+            "name": "www.paypal.com",
+            "url": "https://www.paypal.com"
+        },
+        {
+            "name": "www.youtube.com",
+            "url": "https://www.youtube.com"
+        },
+        {
+            "name": "sourcerer.io",
+            "url": "https://sourcerer.io"
+        },
+        {
+            "name": "stackoverflow.com",
+            "url": "https://stackoverflow.com"
+        }
+    ],
+    "7バージョン関係(リリースなど)": [
+        {
+            "name": "badge.fury.io",
+            "url": "https://badge.fury.io"
+        },
+        {
+            "name": "zenodo.org",
+            "url": "https://zenodo.org"
+        },
+        {
+            "name": "repology.org",
+            "url": "https://repology.org"
+        },
+        {
+            "name": "maven-badges.herokuapp.com",
+            "url": "https://maven-badges.herokuapp.com"
+        }
+    ],
+    "8セキュリティー": [
+        {
+            "name": "api.securityscorecards.dev",
+            "url": "https://api.securityscorecards.dev"
+        },
+        {
+            "name": "sonarcloud.io",
+            "url": "https://sonarcloud.io"
+        }
+    ],
+    "10プラットフォームやOS": [
+        {
+            "name": "android-arsenal.com",
+            "url": "https://android-arsenal.com"
+        },
+        {
+            "name": "play.google.com",
+            "url": "https://play.google.com"
+        },
+        {
+            "name": "www.python.org",
+            "url": "https://www.python.org"
+        },
+        {
+            "name": "readthedocs.org",
+            "url": "https://readthedocs.org"
+        },
+        {
+            "name": "winappstudio.visualstudio.com",
+            "url": "https://winappstudio.visualstudio.com"
+        },
+        {
+            "name": "developer.android.com",
+            "url": "https://developer.android.com"
+        },
+        {
+            "name": "androidweekly.net",
+            "url": "http://androidweekly.net"
+        },
+        {
+            "name": "android-libs.com",
+            "url": "http://android-libs.com"
+        },
+        {
+            "name": "snapcraft.io",
+            "url": "https://snapcraft.io"
+        }
+    ],
+    "11開発ツールやライブラリ": [
+        {
+            "name": "anaconda.org",
+            "url": "https://anaconda.org"
+        },
+        {
+            "name": "app.travis-ci.com",
+            "url": "https://app.travis-ci.com"
+        },
+        {
+            "name": "api.bintray.com",
+            "url": "https://api.bintray.com"
+        },
+        {
+            "name": "hub.docker.com",
+            "url": "https://hub.docker.com"
+        },
+        {
+            "name": "jitpack.io",
+            "url": "https://jitpack.io"
+        },
+        {
+            "name": "mvnrepository.com",
+            "url": "https://mvnrepository.com"
+        },
+        {
+            "name": "www.myget.org",
+            "url": "https://www.myget.org"
+        },
+        {
+            "name": "www.npmjs.com",
+            "url": "https://www.npmjs.com"
+        },
+        {
+            "name": "www.nuget.org",
+            "url": "https://www.nuget.org"
+        },
+        {
+            "name": "search.maven.org",
+            "url": "https://search.maven.org"
+        },
+        {
+            "name": "pypi.org",
+            "url": "https://pypi.org"
+        },
+        {
+            "name": "pypistats.org",
+            "url": "https://pypistats.org"
+        },
+        {
+            "name": "pypi.python.org",
+            "url": "https://pypi.python.org"
+        },
+        {
+            "name": "mvnrepository.com",
+            "url": "https://mvnrepository.com"
+        },
+        {
+            "name": "travis-ci.org",
+            "url": "https://travis-ci.org"
+        },
+        {
+            "name": "winappstudio.visualstudio.com",
+            "url": "https://winappstudio.visualstudio.com"
+        },
+        {
+            "name": "www.jenkins.io",
+            "url": "https://www.jenkins.io"
+        },
+        {
+            "name": "colab.research.google.com",
+            "url": "https://colab.research.google.com"
+        },
+        {
+            "name": "mvnrepository.com",
+            "url": "https://mvnrepository.com"
+        },
+        {
+            "name": "jenkins.osquery.io",
+            "url": "https://jenkins.osquery.io"
+        },
+        {
+            "name": "npmjs.org",
+            "url": "https://npmjs.org"
+        },
+        {
+            "name": "store.docker.com",
+            "url": "https://store.docker.com"
+        },
+        {
+            "name": "travis-ci.com",
+            "url": "https://travis-ci.com"
+        }
+    ],
+    "12特定環境やデプロイ環境": [
+        {
+            "name": "dev.azure.com",
+            "url": "https://dev.azure.com"
+        },
+        {
+            "name": "gitpod.io",
+            "url": "https://gitpod.io"
+        },
+        {
+            "name": "heroku.com",
+            "url": "https://heroku.com"
+        },
+        {
+            "name": "aws.amazon.com",
+            "url": "http://aws.amazon.com"
+        },
+        {
+            "name": "saws.readthedocs.org",
+            "url": "http://saws.readthedocs.org"
+        },
+        {
+            "name": "studiolab.sagemaker.aws",
+            "url": "https://studiolab.sagemaker.aws"
+        },
+        {
+            "name": "mybinder.org",
+            "url": "https://mybinder.org"
+        }
+    ]
+}

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Badge検索</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="このサイトはGithubのurlを入力すると適したBadgeを出力できるサイトです">
+	<meta name="keywords" content="Badge,Github,Java,Python">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/openclose.js"></script>
+	<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+	<!--小さな端末用（800px以下端末）のロゴとメニュー-->
+	<div id="sh">
+		<h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="Badge検索"></a></h1>
+		<nav id="menubar-s">
+			<ul>
+				<li><a href="Home.html">HOME</a></li>
+				<li><a href="index.html">Badgeとは</a></li>
+				<li><a href="Search.html">詳細検索</a></li>
+				<br><b> 人気のBadge</b></br>
+				<li><a href="Badge_C.html">C</a></li>
+				<li><a href="Badge_C++.html">C++</a></li>
+				<li><a href="Badge_Csharp.html">C#</a></li>
+				<li><a href="Badge_Java.html">Java</a></li>
+				<li><a href="Badge_Python.html">Python</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div id="container">
+
+		<div id="main">
+
+			<section id="about" class="mb50">
+
+				<h2><span>Badge検索</span></h2>
+
+
+				<b>Githubのurlを記入</b><br>
+				<td><input type="text" name="urlを記入" size="60" class="ws"></td>
+				<details>
+					<summary>詳細検索</summary>
+					<fieldset>
+						<legend>検索したいカテゴリーを選択</legend>
+
+
+						<div>
+							<input type="checkbox" id="select_radio1" name="radio" />
+							<label for="select_radio1">GithubCI/CD&nbsp;&nbsp;　　　　　　　　　　　</label>
+
+							<input type="checkbox" id="select_radio2" name="radio" />
+							<label for="select_radio2">CI/CD</label>
+						</div>
+
+						<div>
+							<input type="checkbox" id="select_radio3" name="radio" />
+							<label for="select_radio3">テストカバレッジ　　　　　　　　　　　</label>
+
+							<input type="checkbox" id="select_radio4" name="radio" />
+							<label for="select_radio4">コード品質</label>
+						</div>
+
+						<div>
+							<input type="checkbox" id="select_radio5" name="radio" />
+							<label for="select_radio5">ライセンス　　　　　　　　　　　　　　</label>
+
+							<input type="checkbox" id="select_radio6" name="radio" />
+							<label for="select_radio6">外部サイト</label>
+						</div>
+
+						<div>
+							<input type="checkbox" id="select_radio7" name="radio" />
+							<label for="select_radio7">リリースバージョン　　　　　　　　　　</label>
+
+							<input type="checkbox" id="select_radio8" name="radio" />
+							<label for="select_radio8">セキュリティー</label>
+						</div>
+
+						<div>
+							<input type="checkbox" id="select_radio9" name="radio" />
+							<label for="select_radio9">プラットフォーム　　　　　　　　　　　</label>
+
+							<input type="checkbox" id="select_radio10" name="radio" />
+							<label for="select_radio10">開発ツール</label>
+						</div>
+
+						<div>
+							<input type="checkbox" id="select_radio11" name="radio" />
+							<label for="select_radio11">デプロイ環境　　　　　　　　　　　　　</label>
+
+							<input type="checkbox" id="select_radio12" name="radio" />
+							<label for="select_radio12">その他</label>
+						</div>
+
+					</fieldset>
+				</details>
+				<p class="c">
+					<input type="submit" value="検索">
+				</p>
+
+			</section>
+
+			<section>
+
+				<h2><span>検索結果</span></h2>
+
+
+				<section class="box">
+					<h3><span>Badge画像</span></h3>
+
+				</section>
+
+				<table class="ta1">
+					<tr>
+						<th>Badgeurl</th>
+						<td>
+							<div class="textarea-container">
+								<div class="buttons">
+									<button id="htmlButton" onclick="showTextarea('Badgeurl1')">HTML</button>
+									<button id="markdownButton" onclick="showTextarea('Badgeurl2')">Markdown</button>
+									<button onclick="copyContent()">コピー</button>
+								</div>
+								<textarea id="Badgeurl1" cols="30" rows="10" class="wl"></textarea>
+								<textarea id="Badgeurl2" cols="30" rows="10" class="wl"
+									style="display: none;"></textarea>
+							</div>
+						</td>
+					</tr>
+				</table>
+
+				<script>
+					function showTextarea(idToShow) {
+						const badgeUrl1 = document.getElementById('Badgeurl1');
+						const badgeUrl2 = document.getElementById('Badgeurl2');
+
+						if (idToShow === 'Badgeurl1') {
+							badgeUrl1.style.display = '';
+							badgeUrl2.style.display = 'none';
+						} else {
+							badgeUrl1.style.display = 'none';
+							badgeUrl2.style.display = '';
+						}
+					}
+
+					function copyContent() {
+						const badgeUrl1 = document.getElementById('Badgeurl1');
+						const badgeUrl2 = document.getElementById('Badgeurl2');
+						let textareaToCopy;
+
+						if (badgeUrl1.style.display !== 'none') {
+							textareaToCopy = badgeUrl1;
+						} else {
+							textareaToCopy = badgeUrl2;
+						}
+
+						textareaToCopy.select();
+						document.execCommand('copy');
+						alert('内容がコピーされました！');
+					}
+				</script>
+
+
+
+
+				<section class="box">
+					<h3><span>おすすめBadge画像</span></h3>
+
+				</section>
+
+				<table class="ta1">
+					<tr>
+						<th>Badgeurl</th>
+						<td>
+							<div class="textarea-container">
+								<div class="buttons">
+									<button id="htmlButton" onclick="showTextarea('Badgeurl1')">HTML</button>
+									<button id="markdownButton" onclick="showTextarea('Badgeurl2')">Markdown</button>
+									<button onclick="copyContent()">コピー</button> <!-- 追加したコピー用のボタン -->
+								</div>
+								<textarea id="Badgeurl1" cols="30" rows="10" class="wl"></textarea>
+								<textarea id="Badgeurl2" cols="30" rows="10" class="wl"
+									style="display: none;"></textarea>
+							</div>
+						</td>
+					</tr>
+				</table>
+
+				<script>
+					function showTextarea(idToShow) {
+						const badgeUrl1 = document.getElementById('Badgeurl1');
+						const badgeUrl2 = document.getElementById('Badgeurl2');
+
+						if (idToShow === 'Badgeurl1') {
+							badgeUrl1.style.display = '';
+							badgeUrl2.style.display = 'none';
+						} else {
+							badgeUrl1.style.display = 'none';
+							badgeUrl2.style.display = '';
+						}
+					}
+
+					function copyContent() {
+						const badgeUrl1 = document.getElementById('Badgeurl1');
+						const badgeUrl2 = document.getElementById('Badgeurl2');
+						let textareaToCopy;
+
+						if (badgeUrl1.style.display !== 'none') {
+							textareaToCopy = badgeUrl1;
+						} else {
+							textareaToCopy = badgeUrl2;
+						}
+
+						textareaToCopy.select();
+						document.execCommand('copy');
+						alert('内容がコピーされました！');
+					}
+				</script>
+
+
+
+
+
+			</section>
+
+		</div>
+		<!--/main-->
+
+		<div id="sub">
+
+			<!--PC用（801px以上端末）ロゴ-->
+			<h1 class="logo"><a href="index.html"><img src="images/logo.png" Badge検索></a></h1>
+
+			<!--PC用（801px以上端末）メニュー-->
+			<nav id="menubar">
+				<ul>
+					<li><a href="Home.html">HOME</a></li>
+					<li><a href="index.html">Badgeとは</a></li>
+					<li><a href="Search.html">詳細検索</a></li>
+					<br><b> 人気のBadge</b></br>
+					<li><a href="Badge_C.html">C</a></li>
+					<li><a href="Badge_C++.html">C++</a></li>
+					<li><a href="Badge_Csharp.html">C#</a></li>
+					<li><a href="Badge_Java.html">Java</a></li>
+					<li><a href="Badge_Python.html">Python</a></li>
+				</ul>
+			</nav>
+
+		</div>
+		<!--/sub-->
+
+		<p id="pagetop"><a href="#">↑</a></p>
+
+		<footer>
+			<small>Copyright&copy; <a href="index.html">Badge検索</a> All Rights Reserved.</small>
+			<span class="pr"><a href="http://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+		</footer>
+
+	</div>
+	<!--/container-->
+
+	<!--メニューの３本バー-->
+	<div id="menubar_hdr" class="close"><span></span><span></span><span></span></div>
+
+	<!--メニューの開閉処理条件設定　800px以下-->
+	<script>
+		if (OCwindowWidth() <= 800) {
+			open_close("menubar_hdr", "menubar-s");
+		}
+	</script>
+
+</body>
+
+</html>

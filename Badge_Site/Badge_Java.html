@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Badge検索</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="このサイトはGithubのurlを入力すると適したBadgeを出力できるサイトです">
+	<meta name="keywords" content="Badge,Github,Java,Python">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/lightbox.css">
+	<script src="js/openclose.js"></script>
+	<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+	<!--小さな端末用（800px以下端末）のロゴとメニュー-->
+	<div id="sh">
+		<h1 class="logo"><a href="index.html"><img src="images/logo.png" Badge検索></a></h1>
+		<nav id="menubar-s">
+			<ul>
+				<li><a href="Home.html">HOME</a></li>
+				<li><a href="index.html">Badgeとは</a></li>
+				<li><a href="Search.html">詳細検索</a></li>
+				<br><b> 人気のBadge</b></br>
+				<li><a href="Badge_C.html">C</a></li>
+				<li><a href="Badge_C++.html">C++</a></li>
+				<li><a href="Badge_Csharp.html">C#</a></li>
+				<li><a href="Badge_Java.html">Java</a></li>
+				<li><a href="Badge_Python.html">Python</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div id="container">
+
+		<div id="main">
+
+
+
+			<h2><span>人気Badge</span>Java</h2>
+			<h3>ランキングの決め方について</h3>
+			<h3>GithubCI/CD</h3>
+			<ol>
+				<li>Github actions
+					<a href="https://img.shields.io/badge/xxxx-passing-White?logo=github
+			
+									"><img alt="Static Badge" src="https://img.shields.io/badge/xxxx-passing-White?logo=github
+			
+									"></a>
+					<p>対象のサイトが正しく動いたかどうかを表している</p>
+				</li>
+				<li>Github releases<a href="https://img.shields.io/badge/release-v.x.x.x-blue?logo=github
+			
+									
+												"><img alt="Static Badge" src="https://img.shields.io/badge/release-v.x.x.x-blue?logo=github
+			
+												"></a>
+					<p>最終リリース日を記入している。</p>
+				</li>
+				<li>Github LICENSE<a href="https://img.shields.io/badge/license-GPL%202-green?logo=github
+			
+									
+												"><img alt="Static Badge" src="https://img.shields.io/badge/license-GPL%202-green?logo=github
+			
+									">
+					</a>
+					<p>このリポジトリが使用している主なライセンスをBadgeにしている。</p>
+				</li>
+			</ol>
+			<h3>CI/CD</h3>
+			<ol>
+				<li>circleci.com<a href="https://img.shields.io/badge/build-failing-red
+			
+									
+												"><img alt="Static Badge" src="https://img.shields.io/badge/build-failing-red
+			
+												"></a>
+					<p>このサイトはcircleCIという企業向けのサポートとサービスを提供しているCI/CDである。主にLinux,macOS,Android、Windowsで利用できる。
+					</p>
+				</li>
+				<li>ci.appveyor.com
+					<a href="https://img.shields.io/badge/build-passing-Green?logo=appveyor
+			
+									"><img alt="Static Badge" src="https://img.shields.io/badge/build-passing-Green?logo=appveyor
+			
+									"></a>
+					<p>このサイトはAppVeyorというCI/CDである。主にWindows環境に特化しており、主にWindows、最近のアップデートでLinux、macOSのビルドができるサイトとなっている。
+					</p>
+				</li>
+			</ol>
+			<h3>テストカバレッジ</h3>
+			<ol>
+				<li>coveralls.io<a href="https://img.shields.io/badge/coverage-100%25-brightgreen
+						"><img alt="Static Badge" src="https://img.shields.io/badge/coverage-100%25-brightgreen
+						"></a>
+					<p>Coverallsは、ソフトウェアのテストカバレッジを追跡・可視化するサービスであり、CIツールと統合し、コードの変更ごとにカバレッジ情報を自動更新できる。
+					</p>
+				</li>
+				<li>codecov.io
+					<a href="https://img.shields.io/badge/codecov-100%25-brightgreen?logo=codecov"><img
+							alt="Static Badge"
+							src="https://img.shields.io/badge/codecov-100%25-brightgreen?logo=codecov"></a>
+					<p>Codecovは、テストカバレッジの計測結果を可視化したり、ソフトウェアのバグなどを検出することができる。ソフトウェアの品質向上に役立つ。
+					</p>
+				</li>
+				<li>www.codacy.com<a href="https://img.shields.io/badge/code%20quality-A-green?logo=codacy
+						"><img alt="Static Badge" src="https://img.shields.io/badge/code%20quality-A-green?logo=codacy">
+					</a>
+					<p>Codacyは、コード・レビューを自動化し、各コミットおよびプル・リクエストのコード品質を監視するサイトである。</p>
+				</li>
+			</ol>
+			<h3>コード品質</h3>
+			<ol>
+				<li>www.javadoc.io
+					<a href="https://img.shields.io/badge/javadoc-x.x.x-green?logo=mybinder
+
+						"><img alt="Static Badge" src="https://img.shields.io/badge/javadoc-x.x.x-green?logo=mybinder
+
+						"></a>
+					<p>Java言語によって記述されたクラスライブラリやアプリケーションに関するパッケージやクラスやメソッドに関するHTML形式のAPI仕様書のサイトである。</p>
+				</li>
+				<li>lgtm.com<a href="https://img.shields.io/badge/lgtm%20alerts-no%20longer%20available-silver?logo=lgtm
+						
+									"><img alt="Static Badge" src="https://img.shields.io/badge/lgtm%20alerts-no%20longer%20available-silver?logo=lgtm
+						">
+					</a>
+					<p>これはLGTMというコードを分析するためのツールで、CodeQLを使用しソースコードに対してクエリを投げることで脆弱性、不具合のあるコードを検査することができる。</p>
+				</li>
+				<li>isitmaintained.com<a href="https://img.shields.io/badge/issue%20resolution-x.x.x-yellow?logo=isitmaintained
+
+						
+									"><img alt="Static Badge" src="https://img.shields.io/badge/issue%20resolution-x.x.x-yellow?logo=isitmaintained
+
+						">
+						<a href="https://img.shields.io/badge/open%20issue-xx%25-yellow?logo=isitmaintained
+
+												"><img alt="Static Badge" src="https://img.shields.io/badge/open%20issue-xx%25-yellow?logo=isitmaintained
+
+												"></a>
+					</a>
+					<p>isitmaintainedはオープンソフトウェアのopenissueに基づいてプロジェクトがメンテナンスされているかを確認するサイトです。</p>
+				</li>
+			</ol>
+			<h3>ライセンス</h3>
+			<ol>
+				<li>www.apache.org
+					<a href="https://img.shields.io/badge/License-Apache%202.0-blue
+						
+									"><img alt="Static Badge" src="https://img.shields.io/badge/License-Apache%202.0-blue
+						
+									"></a>
+					<p>ApacheとはオープンソースのWebサーバーソフトである。様々なOSで動作でき、最も人気のあるウェブサーバーソフトウェアである。</p>
+				</li>
+				<li>opensource.org
+					<a href="https://img.shields.io/badge/License-Apache%202.0-blue
+						"><img alt="Static Badge" src="https://img.shields.io/badge/License-Apache%202.0-blue
+						"></a>
+					<p>Open Source Initiativeの公式ウェブサイトであり、主にオープンソースライセンスの承認と教育活動を行っている。</p>
+
+				</li>
+				<li>www.gnu.org
+					<a href="https://img.shields.io/badge/License-GPL%20v2-blue
+										"><img alt="Static Badge" src="https://img.shields.io/badge/License-GPL%20v2-blue
+										"></a>
+					<p>フリーソフトウェアのみでUNIX風のOS、ソフトウェアを開発、公開するプロジェクトである。</p>
+				</li>
+
+			</ol>
+			<h3>外部サイト</h3>
+			<ol>
+				<li>gitter.im
+					<a href="https://img.shields.io/badge/chat-on%20gitter-aquamarine
+			
+						"><img alt="Static Badge" src="https://img.shields.io/badge/chat-on%20gitter-aquamarine
+			
+						"></a>
+				</li>
+				<li>X<a href="https://img.shields.io/badge/--FFFFFF?style=social&logo=X&label=Follow%20@xxxx
+			
+												
+							"><img alt="Static Badge" src="https://img.shields.io/badge/--FFFFFF?style=social&logo=X&label=Follow%20@xxxx
+											"></a>
+				</li>
+			</ol>
+			<h3>リリースバージョン</h3>
+			<ol>
+				<li>maven-badges.herokuapp.com
+					<a href="https://img.shields.io/badge/maven%20central-x.x.x-Green
+
+
+						"><img alt="Static Badge" src="https://img.shields.io/badge/maven%20central-x.x.x-Green
+
+
+						"></a>
+					<p></p>
+				</li>
+				<li>badge.fury.io
+					<a href="https://img.shields.io/badge/nuget%20package-x.x.xx-Green
+			
+									"><img alt="Static Badge" src="https://img.shields.io/badge/nuget%20package-x.x.xx-Green
+									"></a>
+				</li>
+				<p>badge.furyとはRubyGems, PyPI, npmなどのバージョンバッジを生成することができる。 また新しいバージョンにも対応し、自動的に更新される。</p>
+				<li>zenodo.org
+					<a href="https://img.shields.io/badge/DOI-xxx%2Fxxx-blue
+							
+													"><img alt="Static Badge" src="https://img.shields.io/badge/DOI-xxx%2Fxxx-blue
+													"></a>
+					<p>Zenodoとは研究データリポジトリである。様々な分野の研究者でも50GBまでファイルをアップロードすることができる。</p>
+				</li>
+			</ol>
+			<h3>セキュリティー</h3>
+			<ol>
+				<li>Sonarcloud.io
+					<a href="https://img.shields.io/badge/quality%20gate-passed-White?logo=sonarcloud
+			
+									"><img alt="Static Badge" src="https://img.shields.io/badge/quality%20gate-passed-White?logo=sonarcloud
+			
+									"></a>
+					<a href="https://img.shields.io/badge/code%20smells-5-White?logo=sonarcloud
+			
+									
+												"><img alt="Static Badge" src="https://img.shields.io/badge/code%20smells-5-White?logo=sonarcloud
+			
+												"></a>
+					<a href="https://img.shields.io/badge/security-A-White?logo=sonarcloud
+			
+									
+												"><img alt="Static Badge" src="https://img.shields.io/badge/security-A-White?logo=sonarcloud
+			
+									">
+					</a>
+					<p>SonarCloudとはCI/CDワークフローで動く静的コード解析ツールである。Github上でのPull Request時やPush時にソースコードを解析することができる。</p>
+				</li>
+				<li>Api.Securityscorecards.dev
+					<a href="https://img.shields.io/badge/openssf%20scorecard-x.x-yellow
+			
+									"><img alt="Static Badge" src="https://img.shields.io/badge/openssf%20scorecard-x.x-yellow
+			
+									"></a>
+				</li>
+			</ol>
+			<h3>プラットフォーム</h3>
+			<ol>
+				<li>Android-Arsenal.com
+					<a href="https://img.shields.io/badge/Android%20Arsenal-ReactiveNetwork-Green
+
+					
+											"><img alt="Static Badge" src="https://img.shields.io/badge/Android%20Arsenal-ReactiveNetwork-Green
+
+					
+											"></a>
+					<p></p>
+				</li>
+				<li>Play.Google.com
+					<a href="https://img.shields.io/badge/docs-passing-green
+						
+									"><img alt="Static Badge" src="https://img.shields.io/badge/docs-passing-green
+									"></a>
+					<p>Google Play Storeのウェブ版のサイトである。Googleによって運営されているAndroidデバイス向けの様々な娯楽サービスのサイトである。</p>
+				</li>
+				<li>Developer.Android.com
+					<a href="https://img.shields.io/badge/Android-x.x.x-Green
+
+						
+									"><img alt="Static Badge" src="https://img.shields.io/badge/Android-x.x.x-Green
+
+						">
+					</a>
+				</li>
+			</ol>
+			<h3>開発ツール</h3>
+			<ol>
+				<li>search.maven.org
+					<a href="https://img.shields.io/badge/maven%E3%83%BCcentral-vx.x.x-blue
+
+						"><img alt="Static Badge" src="https://img.shields.io/badge/maven%E3%83%BCcentral-vx.x.x-blue
+
+						"></a>
+				</li>
+				<li>travis-ci.org<a href="https://img.shields.io/badge/build-passing-Green
+						
+									"><img alt="Static Badge" src="https://img.shields.io/badge/build-passing-Green
+									"></a>
+					<p>Travis-ciとは分散型の継続的インテグレーション サービスであり、設定ファイルひとつでテストを自動化できる。</p>
+				</li>
+				<li>jitpack.io
+					<a href="https://img.shields.io/badge/JitPack-x.x.x-Green
+
+						
+									"><img alt="Static Badge" src="https://img.shields.io/badge/JitPack-x.x.x-Green
+
+						">
+					</a>
+				</li>
+			</ol>
+			<h3>デプロイ環境</h3>
+			<ol>
+				<li>gitpod.io
+					<a href="https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=Gitpod
+
+						"><img alt="Static Badge" src="https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=Gitpod
+
+						"></a>
+					<p>gitpodはGithubなどのリポジトリに連動し、プルリクエストから即座に完全な開発環境を起動することができるサイトである。</p>
+				</li>
+				<li>mybinder.org<a href="https://static.mybinder.org/badge_logo.svg
+						
+									"><img alt="Static Badge" src="https://static.mybinder.org/badge_logo.svg
+									"></a>
+					<p>mybinderとはGitHub 上のJupyter Notebooks をクラウドで実行することができるサイトである。</p>
+				</li>
+				<li>dev.azure.com<a href="https://img.shields.io/badge/Azure%20Pipelines-never%20built-blue?logo=Azure%20Pipelines
+						
+									"><img alt="Static Badge" src="https://img.shields.io/badge/Azure%20Pipelines-never%20built-blue?logo=Azure%20Pipelines
+						">
+					</a>
+					<p>dev.azureとはMicrosoft社が提供しているサーバーやネットワークなどのITインフラをクラウド上で提供するサービスです。</p>
+				</li>
+
+			</ol>
+		</div>
+		<!--/main-->
+
+		<div id="sub">
+
+			<!--PC用（801px以上端末）ロゴ-->
+			<h1 class="logo"><a href="index.html"><img src="images/logo.png" Badge検索></a></h1>
+
+			<!--PC用（801px以上端末）メニュー-->
+			<nav id="menubar">
+				<ul>
+					<li><a href="Home.html">HOME</a></li>
+					<li><a href="index.html">Badgeとは</a></li>
+					<li><a href="Search.html">詳細検索</a></li>
+					<br><b> 人気のBadge</b></br>
+					<li><a href="Badge_C.html">C</a></li>
+					<li><a href="Badge_C++.html">C++</a></li>
+					<li><a href="Badge_Csharp.html">C#</a></li>
+					<li><a href="Badge_Java.html">Java</a></li>
+					<li><a href="Badge_Python.html">Python</a></li>
+				</ul>
+			</nav>
+
+		</div>
+		<!--/sub-->
+
+		<p id="pagetop"><a href="#">↑</a></p>
+
+		<footer>
+			<small>Copyright&copy; <a href="index.html">Sample Web Site</a> All Rights Reserved.</small>
+			<span class="pr"><a href="http://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+		</footer>
+
+	</div>
+	<!--/container-->
+
+	<!--メニューの３本バー-->
+	<div id="menubar_hdr" class="close"><span></span><span></span><span></span></div>
+
+	<!--メニューの開閉処理条件設定　800px以下-->
+	<script>
+		if (OCwindowWidth() <= 800) {
+			open_close("menubar_hdr", "menubar-s");
+		}
+	</script>
+
+	<!--lightbox用jsファイルの読み込み-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox-plus-jquery.min.js"></script>
+
+</body>
+
+</html>
